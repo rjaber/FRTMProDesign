@@ -1,0 +1,11 @@
+# Blender MTL File: 'MainOffice21.blend'
+# Material Count: 1
+
+newmtl None
+Ns 32
+Ka 0.2500000 0.2500000 0.2500000
+Kd 0.600 0.600 0.600
+Ks 0.25 0.25 0.25
+d 1
+illum 2
+map_Kd office_model_texture.png
