@@ -184,10 +184,10 @@ void Model::loadModelTextures(const QString &modelFilePath) {
 }
 
 QString Model::getModelFilePath(const QString &objFilePath) {
-    QStringList modelFilePathStringList = objFilePath.split( "/", QString::SkipEmptyParts );
+    QStringList modelFilePathStringList = objFilePath.split("/", QString::SkipEmptyParts);
     modelFilePathStringList.removeLast();
 
-    QString modelFilePath = modelFilePathStringList.join( "/" );
+    QString modelFilePath = modelFilePathStringList.join("/");
     modelFilePath.append("/");
     return modelFilePath;
 }
