@@ -209,4 +209,3 @@ bool ObjLoader::readMaterialLibrary(const QString &mtlFilePath, QVector<Material
 
     return true;
 }
-

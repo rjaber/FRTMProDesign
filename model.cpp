@@ -182,3 +182,4 @@ void Model::loadModelTextures(const QString &modelFilePath) {
         }
     }
 }
+
