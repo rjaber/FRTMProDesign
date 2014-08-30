@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>models/OfficeModel.mtl</file>
+        <file>models/OfficeModel.obj</file>
+        <file>models/SecurityCamera.mtl</file>
+        <file>models/SecurityCamera.obj</file>
+        <file>shaders/camera3Dmodel.frag</file>
+        <file>shaders/camera3Dmodel.vert</file>
+        <file>shaders/cameraview.frag</file>
+        <file>shaders/cameraview.vert</file>
+        <file>shaders/framebuffer.frag</file>
+        <file>shaders/framebuffer.vert</file>
+        <file>shaders/frustumshader.frag</file>
+        <file>shaders/frustumshader.vert</file>
+        <file>shaders/mainview.frag</file>
+        <file>shaders/mainview.vert</file>
+        <file>models/office_model_texture.png</file>
+        <file>images/camera.png</file>
+        <file>images/camera_orange_background.png</file>
+        <file>images/delete.png</file>
+        <file>images/obj.png</file>
+        <file>images/undo.png</file>
+    </qresource>
+</RCC>
