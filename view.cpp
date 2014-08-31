@@ -15,7 +15,7 @@ View::View(const glm::vec3 &startPos, const glm::vec3 &startViewDir, const glm::
                     ROTATIONAL_SPEED_(rotationalSpeed) {
 }
 
-void View::mouseDown(const int winPosX, const int winPosY) {
+void View::mouseDown(int winPosX, int winPosY) {
     oldMousePosition_ = glm::vec2(winPosX, winPosY);
 }
 

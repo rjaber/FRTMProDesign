@@ -84,7 +84,7 @@ public:
      * @param camID Camera ID.
      * @param cameraViewProjectorMatrix Camera view projector matrix.
      */
-    void drawCameraViewFrameBuffer(const int camID,
+    void drawCameraViewFrameBuffer(int camID,
                                    const glm::mat4 &cameraViewProjectorMatrix) {
         renderTexZBuffer(texCameraViewZBuffer_[camID], cameraViewProjectorMatrix);
     }
@@ -94,7 +94,7 @@ public:
      * @param camID Cameera ID.
      * @param cameraView180FOVProjectorMatrix Camera 180 FOV projector matrix.
      */
-    void drawCamera180FOVFrameBuffer(const int camID,
+    void drawCamera180FOVFrameBuffer(int camID,
                                      const glm::mat4 &cameraView180FOVProjectorMatrix) {
         renderTexZBuffer(texCamera180FOVZBuffer_[camID], cameraView180FOVProjectorMatrix);
     }
@@ -103,7 +103,7 @@ public:
      * @brief Deletes textures belonging to camID
      * @param camID Camera ID.
      */
-    void deleteTexture(const int camID);
+    void deleteTexture(int camID);
 
 private:
     /**
@@ -123,7 +123,7 @@ private:
      * @brief Deletes and releases texture resources belonging to camID
      * @param camID Camera ID.
      */
-    void deleteTextureFromContext(const int camID);
+    void deleteTextureFromContext(int camID);
 
     const int TEXTURE_WIDTH_;
     const int TEXTURE_HEIGHT_;

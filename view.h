@@ -27,14 +27,14 @@ public:
      * @param rotationalSpeed Rotating speed while altering view direction orientation via mouse input.
      */
     View(const glm::vec3 &startPos, const glm::vec3 &startViewDir, const glm::vec3 &up,
-         const float moveSpeed = 1.0f, const float rotationalSpeed = 0.25f);
+         float moveSpeed = 1.0f, float rotationalSpeed = 0.25f);
 
     /**
      * @brief Called when mouse button is clicked
      * @param winPosX Window X-Coordinate of mouse position.
      * @param winPosY Window Y-Coordinate of mouse position.
      */
-    void mouseDown(const int winPosX, const int winPosY);
+    void mouseDown(int winPosX, int winPosY);
 
     /**
      * @brief Called when mouse is moving

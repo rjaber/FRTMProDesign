@@ -152,7 +152,7 @@ public:
      * @brief Sets selected Camera's aspect ratio
      * @param ar New aspect ratio.
      */
-    void setCamerasAspectRatio(const float ar) {
+    void setCamerasAspectRatio(float ar) {
         camViewAspectRatio_ = ar;
     }
 
@@ -189,7 +189,7 @@ public:
      * @param camID Camera ID
      * @return Camera Z-Buffer(Depth) Texture ID
      */
-    GLuint getCameraViewZBuffer(const int camID) const {
+    GLuint getCameraViewZBuffer(int camID) const {
         return camerasZBuffer_->getCameraViewZBuffer(camID);
     }
 
@@ -213,7 +213,7 @@ public:
      * @param camID Camera ID
      * @return View Matrix (i.e. lookAt Matrix) of Camera camID
      */
-    glm::mat4 getCameraViewMatrix(const int camID) const {
+    glm::mat4 getCameraViewMatrix(int camID) const {
         return glm::lookAt(cameras_[camID].position,
                            cameras_[camID].position + cameras_[camID].viewDirection,
                            UP_);
@@ -230,7 +230,7 @@ public:
      * @param camID Camera ID
      * @return World position of Camera camID
      */
-    glm::vec3 getCameraPosition(const int camID) const {
+    glm::vec3 getCameraPosition(int camID) const {
         return cameras_[camID].position;
     }
 
@@ -260,7 +260,7 @@ public:
      * Equivalent to:
      * PerspectiveMatrix(camID) * ViewMatrix(camID)
      */
-    glm::mat4 getCameraViewProjectorMatrix(const int camID) const {
+    glm::mat4 getCameraViewProjectorMatrix(int camID) const {
         return glm::perspective(cameras_[camID].FOV, cameras_[camID].aspectRatio, nearZ, farZ) *
                  glm::lookAt(cameras_[camID].position,
                              cameras_[camID].position+cameras_[camID].viewDirection,
@@ -387,13 +387,13 @@ private:
      * @brief Adds camera resources
      * @param camID Camera ID.
      */
-    void addCameraResources(const int camID);
+    void addCameraResources(int camID);
 
     /**
      * @brief Deletes Camera resources
      * @param camID Camera ID.
      */
-    void deleteCameraResources(const int camID);
+    void deleteCameraResources(int camID);
 
     /**
      * @brief Draws selected Camera's Z-Buffer to update its depth texture

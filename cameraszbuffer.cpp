@@ -49,7 +49,7 @@ GLuint CamerasZBuffer::generateCameraView180FOVZBuffer(int camID) {
     return texCamera180FOVZBuffer_[camID];
 }
 
-void CamerasZBuffer::deleteTexture(const int camID) {
+void CamerasZBuffer::deleteTexture(int camID) {
     openGLDrawingContext_->makeCurrent();
 
     deleteTextureFromContext(camID);
@@ -98,7 +98,7 @@ void CamerasZBuffer::renderTexZBuffer(GLuint &texID, const glm::mat4 &projectorV
     glBindTexture(GL_TEXTURE_2D, 0);
 }
 
-void CamerasZBuffer::deleteTextureFromContext(const int camID) {
+void CamerasZBuffer::deleteTextureFromContext(int camID) {
 
     glDeleteTextures(1, &texCameraViewZBuffer_[camID]);
     glDeleteTextures(1, &texCamera180FOVZBuffer_[camID]);

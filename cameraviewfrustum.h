@@ -41,7 +41,7 @@ public:
      * @param maxCameraYPos Maximum Y-coordinate point in MainView model.
      * @param col Color of trasparent frustum.
      */
-    CameraViewFrustum(QGLContext *context, const float maxModelYPos, const glm::vec4 &col);
+    CameraViewFrustum(QGLContext *context, float maxModelYPos, const glm::vec4 &col);
 
     /** @brief Copying is not allowed*/
     CameraViewFrustum(const CameraViewFrustum&) = delete;
@@ -69,7 +69,7 @@ public:
      * @param ap Aspect Ratio of Camera.
      * @param VP View Perspictive matrix of Camera.
      */
-    void setFrustumProperties(const int fov, const float ap, const glm::mat4 &VP);
+    void setFrustumProperties(int fov, float ap, const glm::mat4 &VP);
 
     /**
      * @brief Draws frustum

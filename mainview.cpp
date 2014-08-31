@@ -237,7 +237,7 @@ bool MainView::event(QEvent *event) {
     }
 }
 
-glm::vec3 MainView::getMouseCursorWolrdPosition(const float winPosX, const float winPosY) {
+glm::vec3 MainView::getMouseCursorWolrdPosition(float winPosX, float winPosY) {
     GLint viewport[4];
     glGetIntegerv(GL_VIEWPORT, viewport);
 

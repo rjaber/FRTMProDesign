@@ -93,7 +93,7 @@ protected:
     void dragMoveEvent(QDragMoveEvent *event);
 
 private:
-   glm::vec3 getMouseCursorWolrdPosition(const float winPosX, const float winPosY);
+   glm::vec3 getMouseCursorWolrdPosition(float winPosX, float winPosY);
    void renderLater();
 
    bool pendingUpdate_;

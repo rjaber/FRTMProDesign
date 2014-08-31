@@ -172,7 +172,7 @@ Cameras::Cameras() :
     camera180FOVViewOn_(false) { }
 
 
-void Cameras::addCameraResources(const int camID) {
+void Cameras::addCameraResources(int camID) {
     selectedCamID_ = camID;
 
     camerasZBuffer_->generateCameraViewZBuffer(selectedCamID_);
@@ -185,7 +185,7 @@ void Cameras::addCameraResources(const int camID) {
 }
 
 
-void Cameras::deleteCameraResources(const int camID) {
+void Cameras::deleteCameraResources(int camID) {
     cameraLabels_->deleteLabel(camID);
     camerasZBuffer_->deleteTexture(camID);
     emit cameraDeleted(camID);

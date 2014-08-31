@@ -7,7 +7,7 @@
 #include "frtmutils.h"
 
 
-CameraViewFrustum::CameraViewFrustum(QGLContext *context, const float maxModelYPos , const glm::vec4 &col) :
+CameraViewFrustum::CameraViewFrustum(QGLContext *context, float maxModelYPos , const glm::vec4 &col) :
     openGLDrawingContext_ (context),
     color_(col) {
     shaderProgram_.buildShaderProgram();
@@ -36,7 +36,7 @@ void CameraViewFrustum::setFrustumColor(const glm::vec4 &frustumColor) {
     shaderProgram_.unUse();
 }
 
-void CameraViewFrustum::setFrustumProperties(const int fov, const float ap, const glm::mat4 &VP) {
+void CameraViewFrustum::setFrustumProperties(int fov, float ap, const glm::mat4 &VP) {
     FOV_ = static_cast<float>(fov);
     aspectRatio_ = ap;
     updateFrustum(VP);
