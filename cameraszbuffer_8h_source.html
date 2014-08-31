@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -91,7 +92,7 @@ $(document).ready(function(){initNavTree('cameraszbuffer_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -144,24 +145,24 @@ $(document).ready(function(){initNavTree('cameraszbuffer_8h_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> texCamera180FOVZBuffer_[camID];</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_cameras_z_buffer.html#ab50b6ec43f9b03bce6626c3533c7d85e">   87</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cameras_z_buffer.html#ab50b6ec43f9b03bce6626c3533c7d85e">drawCameraViewFrameBuffer</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> camID,</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_cameras_z_buffer.html#a8b2b94fc1a419102119e5cb0fdeabb23">   87</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cameras_z_buffer.html#a8b2b94fc1a419102119e5cb0fdeabb23">drawCameraViewFrameBuffer</a>(<span class="keywordtype">int</span> camID,</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                   <span class="keyword">const</span> glm::mat4 &amp;cameraViewProjectorMatrix) {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        renderTexZBuffer(texCameraViewZBuffer_[camID], cameraViewProjectorMatrix);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_cameras_z_buffer.html#ac79aca44a820978dafc0356b06fa4691">   97</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cameras_z_buffer.html#ac79aca44a820978dafc0356b06fa4691">drawCamera180FOVFrameBuffer</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> camID,</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_cameras_z_buffer.html#ab22f6126c3d3e1f35a2a1a11a97158fb">   97</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cameras_z_buffer.html#ab22f6126c3d3e1f35a2a1a11a97158fb">drawCamera180FOVFrameBuffer</a>(<span class="keywordtype">int</span> camID,</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                     <span class="keyword">const</span> glm::mat4 &amp;cameraView180FOVProjectorMatrix) {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        renderTexZBuffer(texCamera180FOVZBuffer_[camID], cameraView180FOVProjectorMatrix);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cameras_z_buffer.html#a8b2e15a11e7dbe17c0a60c8e090701d9">deleteTexture</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> camID);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cameras_z_buffer.html#a7a2173ed0dbacfd64879af3788b9ea5a">deleteTexture</a>(<span class="keywordtype">int</span> camID);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> setTexZBuffer(GLuint &amp;textureID) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> renderTexZBuffer(GLuint &amp;texID, <span class="keyword">const</span> glm::mat4 &amp;projectorVPMatrix) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> deleteTextureFromContext(<span class="keyword">const</span> <span class="keywordtype">int</span> camID);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> deleteTextureFromContext(<span class="keywordtype">int</span> camID);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> TEXTURE_WIDTH_;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> TEXTURE_HEIGHT_;</div>
@@ -185,14 +186,14 @@ $(document).ready(function(){initNavTree('cameraszbuffer_8h_source.html','');});
 <div class="ttc" id="class_g_l_s_l_z_buffer_program_html"><div class="ttname"><a href="class_g_l_s_l_z_buffer_program.html">GLSLZBufferProgram</a></div><div class="ttdoc">GLSLProgram used by CamerasZBuffer to render Z-Buffer (i.e. depth) textures into a dedicated framebuf...</div><div class="ttdef"><b>Definition:</b> <a href="glslzbufferprogram_8h_source.html#l00008">glslzbufferprogram.h:8</a></div></div>
 <div class="ttc" id="class_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Manages a .obj 3D model to draw on an OpenGL screen. </div><div class="ttdef"><b>Definition:</b> <a href="model_8h_source.html#l00029">model.h:29</a></div></div>
 <div class="ttc" id="class_main_view_html"><div class="ttname"><a href="class_main_view.html">MainView</a></div><div class="ttdoc">Main OpenGL screen showing the 3D World and coverage of all Camera instances. </div><div class="ttdef"><b>Definition:</b> <a href="mainview_8h_source.html#l00035">mainview.h:35</a></div></div>
-<div class="ttc" id="class_cameras_z_buffer_html_a8b2e15a11e7dbe17c0a60c8e090701d9"><div class="ttname"><a href="class_cameras_z_buffer.html#a8b2e15a11e7dbe17c0a60c8e090701d9">CamerasZBuffer::deleteTexture</a></div><div class="ttdeci">void deleteTexture(const int camID)</div><div class="ttdoc">Deletes textures belonging to camID. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8cpp_source.html#l00052">cameraszbuffer.cpp:52</a></div></div>
 <div class="ttc" id="class_cameras_z_buffer_html_aea86779b997425479a7145fe127fdf5d"><div class="ttname"><a href="class_cameras_z_buffer.html#aea86779b997425479a7145fe127fdf5d">CamerasZBuffer::CamerasZBuffer</a></div><div class="ttdeci">CamerasZBuffer(MainView *glView)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8cpp_source.html#l00009">cameraszbuffer.cpp:9</a></div></div>
 <div class="ttc" id="class_cameras_z_buffer_html_aac3eba4078d73e05781f001e08528a7f"><div class="ttname"><a href="class_cameras_z_buffer.html#aac3eba4078d73e05781f001e08528a7f">CamerasZBuffer::generateCameraViewZBuffer</a></div><div class="ttdeci">GLuint generateCameraViewZBuffer(int camID)</div><div class="ttdoc">Generates new Z-Buffer texture for Camera camID. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8cpp_source.html#l00040">cameraszbuffer.cpp:40</a></div></div>
 <div class="ttc" id="class_cameras_z_buffer_html_a3c3e1edee571468753040a76305c3722"><div class="ttname"><a href="class_cameras_z_buffer.html#a3c3e1edee571468753040a76305c3722">CamerasZBuffer::getCameraViewZBuffer</a></div><div class="ttdeci">GLuint getCameraViewZBuffer(int camID) const </div><div class="ttdoc">Gets Camera View Z-Buffer texture ID for Camera [camID]. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8h_source.html#l00070">cameraszbuffer.h:70</a></div></div>
 <div class="ttc" id="class_cameras_z_buffer_html"><div class="ttname"><a href="class_cameras_z_buffer.html">CamerasZBuffer</a></div><div class="ttdoc">ZBuffer texture container/manager for Camera(s) </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8h_source.html#l00035">cameraszbuffer.h:35</a></div></div>
+<div class="ttc" id="class_cameras_z_buffer_html_ab22f6126c3d3e1f35a2a1a11a97158fb"><div class="ttname"><a href="class_cameras_z_buffer.html#ab22f6126c3d3e1f35a2a1a11a97158fb">CamerasZBuffer::drawCamera180FOVFrameBuffer</a></div><div class="ttdeci">void drawCamera180FOVFrameBuffer(int camID, const glm::mat4 &amp;cameraView180FOVProjectorMatrix)</div><div class="ttdoc">Draws Camera 180 FOV Z-Buffer Texture. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8h_source.html#l00097">cameraszbuffer.h:97</a></div></div>
+<div class="ttc" id="class_cameras_z_buffer_html_a7a2173ed0dbacfd64879af3788b9ea5a"><div class="ttname"><a href="class_cameras_z_buffer.html#a7a2173ed0dbacfd64879af3788b9ea5a">CamerasZBuffer::deleteTexture</a></div><div class="ttdeci">void deleteTexture(int camID)</div><div class="ttdoc">Deletes textures belonging to camID. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8cpp_source.html#l00052">cameraszbuffer.cpp:52</a></div></div>
 <div class="ttc" id="class_cameras_z_buffer_html_a14544baee9a9ec9d5280f2a9cfea7213"><div class="ttname"><a href="class_cameras_z_buffer.html#a14544baee9a9ec9d5280f2a9cfea7213">CamerasZBuffer::generateCameraView180FOVZBuffer</a></div><div class="ttdeci">GLuint generateCameraView180FOVZBuffer(int camID)</div><div class="ttdoc">Generates new 180 FOV Z-Buffer texture for Camera camID. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8cpp_source.html#l00046">cameraszbuffer.cpp:46</a></div></div>
-<div class="ttc" id="class_cameras_z_buffer_html_ac79aca44a820978dafc0356b06fa4691"><div class="ttname"><a href="class_cameras_z_buffer.html#ac79aca44a820978dafc0356b06fa4691">CamerasZBuffer::drawCamera180FOVFrameBuffer</a></div><div class="ttdeci">void drawCamera180FOVFrameBuffer(const int camID, const glm::mat4 &amp;cameraView180FOVProjectorMatrix)</div><div class="ttdoc">Draws Camera 180 FOV Z-Buffer Texture. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8h_source.html#l00097">cameraszbuffer.h:97</a></div></div>
-<div class="ttc" id="class_cameras_z_buffer_html_ab50b6ec43f9b03bce6626c3533c7d85e"><div class="ttname"><a href="class_cameras_z_buffer.html#ab50b6ec43f9b03bce6626c3533c7d85e">CamerasZBuffer::drawCameraViewFrameBuffer</a></div><div class="ttdeci">void drawCameraViewFrameBuffer(const int camID, const glm::mat4 &amp;cameraViewProjectorMatrix)</div><div class="ttdoc">Draws Camera view Z-Buffer Texture. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8h_source.html#l00087">cameraszbuffer.h:87</a></div></div>
+<div class="ttc" id="class_cameras_z_buffer_html_a8b2b94fc1a419102119e5cb0fdeabb23"><div class="ttname"><a href="class_cameras_z_buffer.html#a8b2b94fc1a419102119e5cb0fdeabb23">CamerasZBuffer::drawCameraViewFrameBuffer</a></div><div class="ttdeci">void drawCameraViewFrameBuffer(int camID, const glm::mat4 &amp;cameraViewProjectorMatrix)</div><div class="ttdoc">Draws Camera view Z-Buffer Texture. </div><div class="ttdef"><b>Definition:</b> <a href="cameraszbuffer_8h_source.html#l00087">cameraszbuffer.h:87</a></div></div>
 <div class="ttc" id="class_cameras_z_buffer_html_a522d43c3aa5055cafe26957533b867a0"><div class="ttname"><a href="class_cameras_z_buffer.html#a522d43c3aa5055cafe26957533b867a0">CamerasZBuffer::~CamerasZBuffer</a></div><div class="ttdeci">~CamerasZBuffer()=default</div><div class="ttdoc">Destructor. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -200,7 +201,7 @@ $(document).ready(function(){initNavTree('cameraszbuffer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>cameraszbuffer.h</b></li>
-    <li class="footer">Generated on Sat Aug 30 2014 17:46:23 for FRTM3DProDesign by
+    <li class="footer">Generated on Sun Aug 31 2014 18:43:50 for FRTM3DProDesign by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

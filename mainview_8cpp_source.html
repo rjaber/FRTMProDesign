@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -91,7 +92,7 @@ $(document).ready(function(){initNavTree('mainview_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -344,7 +345,7 @@ $(document).ready(function(){initNavTree('mainview_8cpp_source.html','');});
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;glm::vec3 MainView::getMouseCursorWolrdPosition(<span class="keyword">const</span> <span class="keywordtype">float</span> winPosX, <span class="keyword">const</span> <span class="keywordtype">float</span> winPosY) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;glm::vec3 MainView::getMouseCursorWolrdPosition(<span class="keywordtype">float</span> winPosX, <span class="keywordtype">float</span> winPosY) {</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    GLint viewport[4];</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    glGetIntegerv(GL_VIEWPORT, viewport);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
@@ -392,7 +393,7 @@ $(document).ready(function(){initNavTree('mainview_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>mainview.cpp</b></li>
-    <li class="footer">Generated on Sat Aug 30 2014 17:46:23 for FRTM3DProDesign by
+    <li class="footer">Generated on Sun Aug 31 2014 18:43:50 for FRTM3DProDesign by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

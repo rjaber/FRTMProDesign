@@ -6,7 +6,7 @@ var searchData=
   ['mesh',['Mesh',['../struct_mesh.html',1,'']]],
   ['model',['Model',['../class_model.html',1,'Model'],['../class_model.html#ab5bdabea36b1d1bee80151e2da913373',1,'Model::Model()=default'],['../class_model.html#a02d5e1b3c0845c9965df08be4c5828d3',1,'Model::Model(const Model &amp;)=delete']]],
   ['modifycameranameinlistwidget',['modifyCameraNameInListWidget',['../class_main_window.html#a8670255dbc00980c95108465b6cd9166',1,'MainWindow']]],
-  ['mousedown',['mouseDown',['../class_view.html#ae0203fc039a93eae664712305a95c349',1,'View']]],
+  ['mousedown',['mouseDown',['../class_view.html#a6ad9d456f3ad154d4841601bf7c428a9',1,'View']]],
   ['mousepressevent',['mousePressEvent',['../class_label.html#ae506ed1dcc5e6e952755c0a23a2d51bf',1,'Label']]],
   ['mouserightbuttonpressed',['mouseRightButtonPressed',['../class_main_view.html#ac9b92655c31eb62412e55f844c4370da',1,'MainView']]],
   ['mouseupdate',['mouseUpdate',['../class_view.html#a3414bfd8483ebe536e149682a1f56924',1,'View']]],

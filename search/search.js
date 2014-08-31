@@ -9,14 +9,16 @@ var indexSectionsWithContent =
 {
   0: "abcdefgilmostuv~",
   1: "cfglmov",
-  2: "abcdegilmostuv~"
+  2: "abcdegilmostuv~",
+  3: "f"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "functions"
+  2: "functions",
+  3: "pages"
 };
 
 function convertToId(search)

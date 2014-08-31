@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -94,7 +95,7 @@ $(document).ready(function(){initNavTree('class_view.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,7 +116,7 @@ $(document).ready(function(){initNavTree('class_view.html','');});
   <tr><td class="entry"><a class="el" href="class_view.html#aa381e894b84527ff6f70771c37fd0ab1">getViewDirection</a>() const </td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_view.html#adfd5b1b31f637c8713c8dabc2d5a0aeb">getViewMatrix</a>() const </td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_view.html#a8993ac61b22d0f8437e5612d59923f52">gotoNewPosition</a>()</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_view.html#ae0203fc039a93eae664712305a95c349">mouseDown</a>(const int winPosX, const int winPosY)</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_view.html#a6ad9d456f3ad154d4841601bf7c428a9">mouseDown</a>(int winPosX, int winPosY)</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_view.html#a3414bfd8483ebe536e149682a1f56924">mouseUpdate</a>(const QMouseEvent *newMouseEvent)</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_view.html#a3c7300da9d89f48913831f7449ab3aa3">moveBackward</a>()</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_view.html#a9868fe18eac9b42f6aec56d6b5c93556">moveDown</a>()</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
@@ -125,13 +126,13 @@ $(document).ready(function(){initNavTree('class_view.html','');});
   <tr><td class="entry"><a class="el" href="class_view.html#af5e907cc94a86559dba4ab692b6e48e3">setView</a>(const glm::vec3 &amp;pos, const glm::vec3 &amp;vDir)</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_view.html#a1d163527ea01d6011bca84066fd6cc58">strafeLeft</a>()</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_view.html#ad99665a8d317baa531bd7bd771df2446">strafeRight</a>()</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_view.html#a601cebeee0a35b3897abee9732c9d7f1">View</a>(const glm::vec3 &amp;startPos, const glm::vec3 &amp;startViewDir, const glm::vec3 &amp;up, const float moveSpeed=1.0f, const float rotationalSpeed=0.25f)</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_view.html#a92cd63ddae3ed86e03dfd4e7cb1634d0">View</a>(const glm::vec3 &amp;startPos, const glm::vec3 &amp;startViewDir, const glm::vec3 &amp;up, float moveSpeed=1.0f, float rotationalSpeed=0.25f)</td><td class="entry"><a class="el" href="class_view.html">View</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Aug 30 2014 17:46:23 for FRTM3DProDesign by
+    <li class="footer">Generated on Sun Aug 31 2014 18:43:50 for FRTM3DProDesign by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

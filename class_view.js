@@ -1,11 +1,11 @@
 var class_view =
 [
-    [ "View", "class_view.html#a601cebeee0a35b3897abee9732c9d7f1", null ],
+    [ "View", "class_view.html#a92cd63ddae3ed86e03dfd4e7cb1634d0", null ],
     [ "getPosition", "class_view.html#a63aaeb5c061ce186e77085f4fba4f7c8", null ],
     [ "getViewDirection", "class_view.html#aa381e894b84527ff6f70771c37fd0ab1", null ],
     [ "getViewMatrix", "class_view.html#adfd5b1b31f637c8713c8dabc2d5a0aeb", null ],
     [ "gotoNewPosition", "class_view.html#a8993ac61b22d0f8437e5612d59923f52", null ],
-    [ "mouseDown", "class_view.html#ae0203fc039a93eae664712305a95c349", null ],
+    [ "mouseDown", "class_view.html#a6ad9d456f3ad154d4841601bf7c428a9", null ],
     [ "mouseUpdate", "class_view.html#a3414bfd8483ebe536e149682a1f56924", null ],
     [ "moveBackward", "class_view.html#a3c7300da9d89f48913831f7449ab3aa3", null ],
     [ "moveDown", "class_view.html#a9868fe18eac9b42f6aec56d6b5c93556", null ],
