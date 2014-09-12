@@ -94,7 +94,7 @@ void MainView::paintGL() {
 
     glClearBufferfv(GL_COLOR, 0, glm::value_ptr(MainModel::skyColor));
     glClear(GL_DEPTH_BUFFER_BIT);
-    glViewport(0,0,mainViewWidth_, mainViewHeight_);
+    glViewport(0, 0, mainViewWidth_, mainViewHeight_);
     glEnable(GL_CULL_FACE);
     glEnable(GL_CLIP_PLANE0);
 
