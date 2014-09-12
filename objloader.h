@@ -89,7 +89,7 @@ private:
     /**
      * @brief Parses the .mtl file into materials container
      * @param fileName File path of .obj file.
-     * @param materials Out variable used to store matrials of the 3D model.
+     * @param materials Out variable used to store materials of the 3D model.
      * @return Whether the parsing operation completed successfully.
      */
     bool readMaterialLibrary(const QString &mtlFilePath, QVector<Material> &materials);
