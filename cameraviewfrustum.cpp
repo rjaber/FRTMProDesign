@@ -105,6 +105,7 @@ void CameraViewFrustum::updateFrustum(const glm::mat4 &VP)  {
     //calculates frustum vertices in world space
     for (size_t i = 0 ; i < NUM_FRUSTUM_VERTICES_ ; ++i){
         frustumVertices_[i] = glm::inverse(cameraProjectorMatrix_) * CLIP_SPACE_CUBE_.vertices[i];
+        assert(frustumVertices_[i].w != 0);
         frustumVertices_[i] /= frustumVertices_[i].w;
     }
 
