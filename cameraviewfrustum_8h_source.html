@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +91,7 @@ $(document).ready(function(){initNavTree('cameraviewfrustum_8h_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,9 +134,9 @@ $(document).ready(function(){initNavTree('cameraviewfrustum_8h_source.html','');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_camera_view_frustum.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_camera_view_frustum.html">CameraViewFrustum</a> {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_camera_view_frustum.html#a54a641e9681b5a24bc2c0306a4040a0e">CameraViewFrustum</a>(QGLContext *context, <span class="keywordtype">float</span> maxModelYPos, <span class="keyword">const</span> glm::vec4 &amp;col);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_camera_view_frustum.html#abbf035481de525ac80953911664b6617">CameraViewFrustum</a>(QGLContext *context, <span class="keyword">const</span> <span class="keywordtype">float</span> maxModelYPos, <span class="keyword">const</span> glm::vec4 &amp;col);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_camera_view_frustum.html#a54a641e9681b5a24bc2c0306a4040a0e">CameraViewFrustum</a>(<span class="keyword">const</span> <a class="code" href="class_camera_view_frustum.html">CameraViewFrustum</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_camera_view_frustum.html#abbf035481de525ac80953911664b6617">CameraViewFrustum</a>(<span class="keyword">const</span> <a class="code" href="class_camera_view_frustum.html">CameraViewFrustum</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_camera_view_frustum.html">CameraViewFrustum</a>&amp; <a class="code" href="class_camera_view_frustum.html#a57040c763632c0553a51d6e8ba3981ba">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_camera_view_frustum.html">CameraViewFrustum</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
@@ -147,7 +146,7 @@ $(document).ready(function(){initNavTree('cameraviewfrustum_8h_source.html','');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_view_frustum.html#ad805e4c6ab5e804042b9fe461ccb1cb7">setFrustumColor</a>(<span class="keyword">const</span> glm::vec4 &amp;frustumColor);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_view_frustum.html#ae22d16f2d9b65d005bbc75016dca83f7">setFrustumProperties</a>(<span class="keywordtype">int</span> fov, <span class="keywordtype">float</span> ap, <span class="keyword">const</span> glm::mat4 &amp;VP);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_view_frustum.html#a6fbceebc5f15b490d18b7cdab815d112">setFrustumProperties</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> fov, <span class="keyword">const</span> <span class="keywordtype">float</span> ap, <span class="keyword">const</span> glm::mat4 &amp;VP);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_view_frustum.html#a2a86e4bab05cde2f621e8fc57e658dc0">drawFrustum</a>(<span class="keyword">const</span> glm::mat4 &amp;MVP, <span class="keyword">const</span> GLuint texDepthID);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
@@ -177,22 +176,22 @@ $(document).ready(function(){initNavTree('cameraviewfrustum_8h_source.html','');
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif // CAMERAVIEWFRUSTUM_H</span></div>
 <div class="ttc" id="class_camera_view_frustum_html"><div class="ttname"><a href="class_camera_view_frustum.html">CameraViewFrustum</a></div><div class="ttdoc">Draws a transparent frustum representing Camera&#39;s coverage area. </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8h_source.html#l00037">cameraviewfrustum.h:37</a></div></div>
-<div class="ttc" id="class_camera_view_frustum_html_ae22d16f2d9b65d005bbc75016dca83f7"><div class="ttname"><a href="class_camera_view_frustum.html#ae22d16f2d9b65d005bbc75016dca83f7">CameraViewFrustum::setFrustumProperties</a></div><div class="ttdeci">void setFrustumProperties(int fov, float ap, const glm::mat4 &amp;VP)</div><div class="ttdoc">Sets/Updates frustum attributes. Typically called prior to calling drawFrustum() </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8cpp_source.html#l00039">cameraviewfrustum.cpp:39</a></div></div>
 <div class="ttc" id="class_camera_view_frustum_html_ad805e4c6ab5e804042b9fe461ccb1cb7"><div class="ttname"><a href="class_camera_view_frustum.html#ad805e4c6ab5e804042b9fe461ccb1cb7">CameraViewFrustum::setFrustumColor</a></div><div class="ttdeci">void setFrustumColor(const glm::vec4 &amp;frustumColor)</div><div class="ttdoc">Changes the frustum color to the one provided. </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8cpp_source.html#l00032">cameraviewfrustum.cpp:32</a></div></div>
 <div class="ttc" id="class_camera_view_frustum_html_af444cbec5544c7489b1712afa280dd3b"><div class="ttname"><a href="class_camera_view_frustum.html#af444cbec5544c7489b1712afa280dd3b">CameraViewFrustum::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Releases OpenGL context resources and restarts state of object. </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8cpp_source.html#l00023">cameraviewfrustum.cpp:23</a></div></div>
 <div class="ttc" id="class_camera_view_frustum_html_a3bc72e3ddf904ffda7bd4aa6e01ecda0"><div class="ttname"><a href="class_camera_view_frustum.html#a3bc72e3ddf904ffda7bd4aa6e01ecda0">CameraViewFrustum::~CameraViewFrustum</a></div><div class="ttdeci">~CameraViewFrustum()=default</div><div class="ttdoc">Destructor. </div></div>
 <div class="ttc" id="struct_clip_space_cube_html"><div class="ttname"><a href="struct_clip_space_cube.html">ClipSpaceCube</a></div><div class="ttdoc">Struct that holds the values of the eight vertices of a cube in clip space. </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8h_source.html#l00017">cameraviewfrustum.h:17</a></div></div>
 <div class="ttc" id="class_g_l_s_l_frustum_program_html"><div class="ttname"><a href="class_g_l_s_l_frustum_program.html">GLSLFrustumProgram</a></div><div class="ttdoc">GLSLProgram used by CameraViewFrustum to render the Camera&#39;s transparent frustum in the MainView QGLW...</div><div class="ttdef"><b>Definition:</b> <a href="glslfrustumprogram_8h_source.html#l00008">glslfrustumprogram.h:8</a></div></div>
-<div class="ttc" id="class_camera_view_frustum_html_a54a641e9681b5a24bc2c0306a4040a0e"><div class="ttname"><a href="class_camera_view_frustum.html#a54a641e9681b5a24bc2c0306a4040a0e">CameraViewFrustum::CameraViewFrustum</a></div><div class="ttdeci">CameraViewFrustum(QGLContext *context, float maxModelYPos, const glm::vec4 &amp;col)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8cpp_source.html#l00010">cameraviewfrustum.cpp:10</a></div></div>
+<div class="ttc" id="class_camera_view_frustum_html_abbf035481de525ac80953911664b6617"><div class="ttname"><a href="class_camera_view_frustum.html#abbf035481de525ac80953911664b6617">CameraViewFrustum::CameraViewFrustum</a></div><div class="ttdeci">CameraViewFrustum(QGLContext *context, const float maxModelYPos, const glm::vec4 &amp;col)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8cpp_source.html#l00010">cameraviewfrustum.cpp:10</a></div></div>
 <div class="ttc" id="class_camera_view_frustum_html_a2a86e4bab05cde2f621e8fc57e658dc0"><div class="ttname"><a href="class_camera_view_frustum.html#a2a86e4bab05cde2f621e8fc57e658dc0">CameraViewFrustum::drawFrustum</a></div><div class="ttdeci">void drawFrustum(const glm::mat4 &amp;MVP, const GLuint texDepthID)</div><div class="ttdoc">Draws frustum. </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8cpp_source.html#l00045">cameraviewfrustum.cpp:45</a></div></div>
 <div class="ttc" id="class_camera_view_frustum_html_a57040c763632c0553a51d6e8ba3981ba"><div class="ttname"><a href="class_camera_view_frustum.html#a57040c763632c0553a51d6e8ba3981ba">CameraViewFrustum::operator=</a></div><div class="ttdeci">CameraViewFrustum &amp; operator=(const CameraViewFrustum &amp;)=delete</div><div class="ttdoc">Copying is not allowed. </div></div>
+<div class="ttc" id="class_camera_view_frustum_html_a6fbceebc5f15b490d18b7cdab815d112"><div class="ttname"><a href="class_camera_view_frustum.html#a6fbceebc5f15b490d18b7cdab815d112">CameraViewFrustum::setFrustumProperties</a></div><div class="ttdeci">void setFrustumProperties(const int fov, const float ap, const glm::mat4 &amp;VP)</div><div class="ttdoc">Sets/Updates frustum attributes. Typically called prior to calling drawFrustum() </div><div class="ttdef"><b>Definition:</b> <a href="cameraviewfrustum_8cpp_source.html#l00039">cameraviewfrustum.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>cameraviewfrustum.h</b></li>
-    <li class="footer">Generated on Sun Aug 31 2014 18:43:50 for FRTM3DProDesign by
+    <li class="footer">Generated on Fri Sep 12 2014 19:47:10 for FRTM3DProDesign by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

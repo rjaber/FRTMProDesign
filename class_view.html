@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -95,7 +94,7 @@ $(document).ready(function(){initNavTree('class_view.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,12 +119,12 @@ $(document).ready(function(){initNavTree('class_view.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a92cd63ddae3ed86e03dfd4e7cb1634d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view.html#a92cd63ddae3ed86e03dfd4e7cb1634d0">View</a> (const glm::vec3 &amp;startPos, const glm::vec3 &amp;startViewDir, const glm::vec3 &amp;up, float moveSpeed=1.0f, float rotationalSpeed=0.25f)</td></tr>
-<tr class="memdesc:a92cd63ddae3ed86e03dfd4e7cb1634d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a92cd63ddae3ed86e03dfd4e7cb1634d0">More...</a><br /></td></tr>
-<tr class="separator:a92cd63ddae3ed86e03dfd4e7cb1634d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ad9d456f3ad154d4841601bf7c428a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view.html#a6ad9d456f3ad154d4841601bf7c428a9">mouseDown</a> (int winPosX, int winPosY)</td></tr>
-<tr class="memdesc:a6ad9d456f3ad154d4841601bf7c428a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when mouse button is clicked.  <a href="#a6ad9d456f3ad154d4841601bf7c428a9">More...</a><br /></td></tr>
-<tr class="separator:a6ad9d456f3ad154d4841601bf7c428a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601cebeee0a35b3897abee9732c9d7f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view.html#a601cebeee0a35b3897abee9732c9d7f1">View</a> (const glm::vec3 &amp;startPos, const glm::vec3 &amp;startViewDir, const glm::vec3 &amp;up, const float moveSpeed=1.0f, const float rotationalSpeed=0.25f)</td></tr>
+<tr class="memdesc:a601cebeee0a35b3897abee9732c9d7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a601cebeee0a35b3897abee9732c9d7f1">More...</a><br /></td></tr>
+<tr class="separator:a601cebeee0a35b3897abee9732c9d7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0203fc039a93eae664712305a95c349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view.html#ae0203fc039a93eae664712305a95c349">mouseDown</a> (const int winPosX, const int winPosY)</td></tr>
+<tr class="memdesc:ae0203fc039a93eae664712305a95c349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when mouse button is clicked.  <a href="#ae0203fc039a93eae664712305a95c349">More...</a><br /></td></tr>
+<tr class="separator:ae0203fc039a93eae664712305a95c349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3414bfd8483ebe536e149682a1f56924"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view.html#a3414bfd8483ebe536e149682a1f56924">mouseUpdate</a> (const QMouseEvent *newMouseEvent)</td></tr>
 <tr class="memdesc:a3414bfd8483ebe536e149682a1f56924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when mouse is moving.  <a href="#a3414bfd8483ebe536e149682a1f56924">More...</a><br /></td></tr>
 <tr class="separator:a3414bfd8483ebe536e149682a1f56924"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,7 +187,7 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 
 <p>Definition at line <a class="el" href="view_8h_source.html#l00019">19</a> of file <a class="el" href="view_8h_source.html">view.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a92cd63ddae3ed86e03dfd4e7cb1634d0"></a>
+<a class="anchor" id="a601cebeee0a35b3897abee9732c9d7f1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -213,13 +212,13 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const float&#160;</td>
           <td class="paramname"><em>moveSpeed</em> = <code>1.0f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const float&#160;</td>
           <td class="paramname"><em>rotationalSpeed</em> = <code>0.25f</code>&#160;</td>
         </tr>
         <tr>
@@ -267,20 +266,20 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 
 </div>
 </div>
-<a class="anchor" id="a6ad9d456f3ad154d4841601bf7c428a9"></a>
+<a class="anchor" id="ae0203fc039a93eae664712305a95c349"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void View::mouseDown </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>winPosX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>winPosY</em>&#160;</td>
         </tr>
         <tr>
@@ -419,7 +418,7 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_view.html">View</a></li>
-    <li class="footer">Generated on Sun Aug 31 2014 18:43:50 for FRTM3DProDesign by
+    <li class="footer">Generated on Fri Sep 12 2014 19:47:11 for FRTM3DProDesign by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +91,7 @@ $(document).ready(function(){initNavTree('cameras_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -192,7 +191,7 @@ $(document).ready(function(){initNavTree('cameras_8cpp_source.html','');});
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QVector&lt;glm::mat4&gt; camerasModelMatrix;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; camera : cameras_) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        camerasModelMatrix.push_back(glm::inverse(<a class="code" href="class_cameras.html#adb15b9e3a03acd5751c8cdaaa33e1a95">getCameraViewMatrix</a>(camera.camID)));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        camerasModelMatrix.push_back(glm::inverse(<a class="code" href="class_cameras.html#a80c1d38cebea1a3cf78a1d177b72624e">getCameraViewMatrix</a>(camera.camID)));</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    camera3DModel_-&gt;draw(camerasModelMatrix, MVP);</div>
@@ -280,7 +279,7 @@ $(document).ready(function(){initNavTree('cameras_8cpp_source.html','');});
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    camera180FOVViewOn_(false) { }</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">void</span> Cameras::addCameraResources(<span class="keywordtype">int</span> camID) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">void</span> Cameras::addCameraResources(<span class="keyword">const</span> <span class="keywordtype">int</span> camID) {</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    selectedCamID_ = camID;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    camerasZBuffer_-&gt;generateCameraViewZBuffer(selectedCamID_);</div>
@@ -293,7 +292,7 @@ $(document).ready(function(){initNavTree('cameras_8cpp_source.html','');});
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">void</span> Cameras::deleteCameraResources(<span class="keywordtype">int</span> camID) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">void</span> Cameras::deleteCameraResources(<span class="keyword">const</span> <span class="keywordtype">int</span> camID) {</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    cameraLabels_-&gt;deleteLabel(camID);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    camerasZBuffer_-&gt;deleteTexture(camID);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    emit <a class="code" href="class_cameras.html#a1bce03cad997dd8910017568d90ecfc1">cameraDeleted</a>(camID);</div>
@@ -317,7 +316,7 @@ $(document).ready(function(){initNavTree('cameras_8cpp_source.html','');});
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordtype">void</span> Cameras::drawAllCameraZBuffers() {</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; camera : cameras_) {</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        camerasZBuffer_-&gt;drawCameraViewFrameBuffer(camera.camID,</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                                   <a class="code" href="class_cameras.html#aa2fa3251b773eec86d5d75a4e4135c3a">getCameraViewProjectorMatrix</a>(camera.camID));</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                                   <a class="code" href="class_cameras.html#a7a7f38c8b96db11f952dbe9d646f1bec">getCameraViewProjectorMatrix</a>(camera.camID));</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">if</span> (camera180FOVViewOn_)</div>
@@ -349,9 +348,11 @@ $(document).ready(function(){initNavTree('cameras_8cpp_source.html','');});
 <div class="ttc" id="class_cameras_html_a5dd5bac41e686f5e18f16e2169600eba"><div class="ttname"><a href="class_cameras.html#a5dd5bac41e686f5e18f16e2169600eba">Cameras::empty</a></div><div class="ttdeci">bool empty() const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00295">cameras.h:295</a></div></div>
 <div class="ttc" id="class_cameras_html_a487c01a7e814bf7c93accea6c6521caf"><div class="ttname"><a href="class_cameras.html#a487c01a7e814bf7c93accea6c6521caf">Cameras::init</a></div><div class="ttdeci">void init(MainView *glMainView, float modelYMax)</div><div class="ttdoc">init Initializes Cameras for use </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00026">cameras.cpp:26</a></div></div>
 <div class="ttc" id="class_camera_labels_html"><div class="ttname"><a href="class_camera_labels.html">CameraLabels</a></div><div class="ttdoc">Camera Label(s) Container Manager. </div><div class="ttdef"><b>Definition:</b> <a href="cameralabels_8h_source.html#l00093">cameralabels.h:93</a></div></div>
+<div class="ttc" id="class_cameras_html_a7a7f38c8b96db11f952dbe9d646f1bec"><div class="ttname"><a href="class_cameras.html#a7a7f38c8b96db11f952dbe9d646f1bec">Cameras::getCameraViewProjectorMatrix</a></div><div class="ttdeci">glm::mat4 getCameraViewProjectorMatrix(const int camID) const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00263">cameras.h:263</a></div></div>
 <div class="ttc" id="class_cameras_html_a8dce91e4787701de9c362909af055598"><div class="ttname"><a href="class_cameras.html#a8dce91e4787701de9c362909af055598">Cameras::setSelectedCameraPropertiesInMainWindow</a></div><div class="ttdeci">void setSelectedCameraPropertiesInMainWindow(int FOV, float aspectRatio, QString cameraName)</div><div class="ttdoc">This signal is emitted to updates the selected Camera&#39;s information displayed in Main Window...</div></div>
 <div class="ttc" id="class_cameras_html_a71a6eb38c9358b3cf6ff487057359488"><div class="ttname"><a href="class_cameras.html#a71a6eb38c9358b3cf6ff487057359488">Cameras::cameraNameModified</a></div><div class="ttdeci">void cameraNameModified(int camID, QString cameraName)</div><div class="ttdoc">This signal is emitted when the Camera&#39;s name is modified. </div></div>
 <div class="ttc" id="class_cameras_html_a34a5e7ec4332cf2aae525058fdbad67d"><div class="ttname"><a href="class_cameras.html#a34a5e7ec4332cf2aae525058fdbad67d">Cameras::drawSelectedCameraFrustum</a></div><div class="ttdeci">void drawSelectedCameraFrustum(const glm::mat4 &amp;MVP)</div><div class="ttdoc">Draws the selected Camera&#39;s frustum @param MVP Model View Projection matrix of MainView. </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00093">cameras.cpp:93</a></div></div>
+<div class="ttc" id="class_cameras_html_a80c1d38cebea1a3cf78a1d177b72624e"><div class="ttname"><a href="class_cameras.html#a80c1d38cebea1a3cf78a1d177b72624e">Cameras::getCameraViewMatrix</a></div><div class="ttdeci">glm::mat4 getCameraViewMatrix(const int camID) const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00216">cameras.h:216</a></div></div>
 <div class="ttc" id="class_cameras_html_a56ff4df74d84c0955330048a87131023"><div class="ttname"><a href="class_cameras.html#a56ff4df74d84c0955330048a87131023">Cameras::deleteSelectedCamera</a></div><div class="ttdeci">void deleteSelectedCamera()</div><div class="ttdoc">Deletes selected Camera from container. </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00129">cameras.cpp:129</a></div></div>
 <div class="ttc" id="class_cameras_html_ad3516348d4eec461d5cc187804453a0b"><div class="ttname"><a href="class_cameras.html#ad3516348d4eec461d5cc187804453a0b">Cameras::getMemento</a></div><div class="ttdeci">void getMemento()</div><div class="ttdoc">Gets Memento to undo previous operations Retrieves snapshot from Cameras&#39; previous container state...</div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00144">cameras.cpp:144</a></div></div>
 <div class="ttc" id="class_cameras_html_adfbf9227e15b5041052689dbce35dc1b"><div class="ttname"><a href="class_cameras.html#adfbf9227e15b5041052689dbce35dc1b">Cameras::terminate</a></div><div class="ttdeci">void terminate()</div><div class="ttdoc">Releases resources and restarts object&#39;s state. </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00020">cameras.cpp:20</a></div></div>
@@ -362,12 +363,10 @@ $(document).ready(function(){initNavTree('cameras_8cpp_source.html','');});
 <div class="ttc" id="class_cameras_html_a5bbeb1567171cc2864628796f86c8806"><div class="ttname"><a href="class_cameras.html#a5bbeb1567171cc2864628796f86c8806">Cameras::getSelectedCameraAspectRatio</a></div><div class="ttdeci">float getSelectedCameraAspectRatio() const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00169">cameras.h:169</a></div></div>
 <div class="ttc" id="class_cameras_html_ab47fd5c0e890c896725ed3210bc090f7"><div class="ttname"><a href="class_cameras.html#ab47fd5c0e890c896725ed3210bc090f7">Cameras::getSelectedCameraFOV</a></div><div class="ttdeci">int getSelectedCameraFOV() const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00162">cameras.h:162</a></div></div>
 <div class="ttc" id="class_cameras_html_a7a1b8e217670d581d0cb381bdf018489"><div class="ttname"><a href="class_cameras.html#a7a1b8e217670d581d0cb381bdf018489">Cameras::drawCameras</a></div><div class="ttdeci">void drawCameras(const glm::mat4 &amp;MVP)</div><div class="ttdoc">Draws current Camera 3D Model(s) </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00083">cameras.cpp:83</a></div></div>
-<div class="ttc" id="class_cameras_html_aa2fa3251b773eec86d5d75a4e4135c3a"><div class="ttname"><a href="class_cameras.html#aa2fa3251b773eec86d5d75a4e4135c3a">Cameras::getCameraViewProjectorMatrix</a></div><div class="ttdeci">glm::mat4 getCameraViewProjectorMatrix(int camID) const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00263">cameras.h:263</a></div></div>
 <div class="ttc" id="class_cameras_html_af1eb8f1073306f0cccfc118da532939e"><div class="ttname"><a href="class_cameras.html#af1eb8f1073306f0cccfc118da532939e">Cameras::setSelectedCamera</a></div><div class="ttdeci">void setSelectedCamera(int camID)</div><div class="ttdoc">Sets new selected camera. </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00099">cameras.cpp:99</a></div></div>
 <div class="ttc" id="class_cameras_html_ae17328f38b22f2d8dc5365257ea210af"><div class="ttname"><a href="class_cameras.html#ae17328f38b22f2d8dc5365257ea210af">Cameras::getSelectedCameraViewZBuffer</a></div><div class="ttdeci">GLuint getSelectedCameraViewZBuffer() const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00184">cameras.h:184</a></div></div>
 <div class="ttc" id="class_cameras_html_a1bce03cad997dd8910017568d90ecfc1"><div class="ttname"><a href="class_cameras.html#a1bce03cad997dd8910017568d90ecfc1">Cameras::cameraDeleted</a></div><div class="ttdeci">void cameraDeleted(int camID)</div><div class="ttdoc">This signal is emitted when Camera is deleted. </div></div>
 <div class="ttc" id="class_cameras_html_aa376d23f372b1795f4d615120843e42e"><div class="ttname"><a href="class_cameras.html#aa376d23f372b1795f4d615120843e42e">Cameras::getSelectedCameraViewProjectorMatrix</a></div><div class="ttdeci">glm::mat4 getSelectedCameraViewProjectorMatrix() const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00250">cameras.h:250</a></div></div>
-<div class="ttc" id="class_cameras_html_adb15b9e3a03acd5751c8cdaaa33e1a95"><div class="ttname"><a href="class_cameras.html#adb15b9e3a03acd5751c8cdaaa33e1a95">Cameras::getCameraViewMatrix</a></div><div class="ttdeci">glm::mat4 getCameraViewMatrix(int camID) const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00216">cameras.h:216</a></div></div>
 <div class="ttc" id="class_cameras_html_ab6ad902e1d808a6507669ded5af223a7"><div class="ttname"><a href="class_cameras.html#ab6ad902e1d808a6507669ded5af223a7">Cameras::getSelectedCamera180FOVProjectorMatrix</a></div><div class="ttdeci">glm::mat4 getSelectedCamera180FOVProjectorMatrix() const </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8h_source.html#l00274">cameras.h:274</a></div></div>
 <div class="ttc" id="class_cameras_html_aa44275a271f6bfa3fb46f04d85bbb6fe"><div class="ttname"><a href="class_cameras.html#aa44275a271f6bfa3fb46f04d85bbb6fe">Cameras::setSelectedCameraAspectRatio</a></div><div class="ttdeci">void setSelectedCameraAspectRatio(double value)</div><div class="ttdoc">Sets new Aspect Ratio of selected Camera. </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00115">cameras.cpp:115</a></div></div>
 <div class="ttc" id="class_cameras_html_a41d8034138056e0d396382fbe1de834f"><div class="ttname"><a href="class_cameras.html#a41d8034138056e0d396382fbe1de834f">Cameras::setSelectedCameraName</a></div><div class="ttdeci">void setSelectedCameraName(QString camName)</div><div class="ttdoc">Sets new name of selected Camera. </div><div class="ttdef"><b>Definition:</b> <a href="cameras_8cpp_source.html#l00122">cameras.cpp:122</a></div></div>
@@ -380,7 +379,7 @@ $(document).ready(function(){initNavTree('cameras_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>cameras.cpp</b></li>
-    <li class="footer">Generated on Sun Aug 31 2014 18:43:50 for FRTM3DProDesign by
+    <li class="footer">Generated on Fri Sep 12 2014 19:47:10 for FRTM3DProDesign by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

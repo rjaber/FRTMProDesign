@@ -1,9 +1,9 @@
 var searchData=
 [
   ['setcamera180fovview',['setCamera180FOVView',['../class_cameras.html#a8c6620f01de36ae12ec1b5549af791a4',1,'Cameras']]],
-  ['setcamerasaspectratio',['setCamerasAspectRatio',['../class_cameras.html#ab869b2a62c368a4945c5a953f2872270',1,'Cameras']]],
+  ['setcamerasaspectratio',['setCamerasAspectRatio',['../class_cameras.html#ab0389e255f9a8b6a9ac1c7bbbd1f8084',1,'Cameras']]],
   ['setfrustumcolor',['setFrustumColor',['../class_camera_view_frustum.html#ad805e4c6ab5e804042b9fe461ccb1cb7',1,'CameraViewFrustum']]],
-  ['setfrustumproperties',['setFrustumProperties',['../class_camera_view_frustum.html#ae22d16f2d9b65d005bbc75016dca83f7',1,'CameraViewFrustum']]],
+  ['setfrustumproperties',['setFrustumProperties',['../class_camera_view_frustum.html#a6fbceebc5f15b490d18b7cdab815d112',1,'CameraViewFrustum']]],
   ['setgotoposition',['setGoToPosition',['../class_view.html#a17982e4405bab83d4d08d2d49b078f2e',1,'View']]],
   ['setmainviewworldposition',['setMainViewWorldPosition',['../class_main_view.html#a1598ae63dad7e90ad77d12ff2b66f75a',1,'MainView']]],
   ['setmemento',['setMemento',['../class_cameras.html#a39989a31d6ede1713008ed88c7e1f294',1,'Cameras']]],

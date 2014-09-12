@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +91,7 @@ $(document).ready(function(){initNavTree('view_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,10 +113,10 @@ $(document).ready(function(){initNavTree('view_8h_source.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_view.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_view.html">View</a> {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_view.html#a92cd63ddae3ed86e03dfd4e7cb1634d0">View</a>(<span class="keyword">const</span> glm::vec3 &amp;startPos, <span class="keyword">const</span> glm::vec3 &amp;startViewDir, <span class="keyword">const</span> glm::vec3 &amp;up,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;         <span class="keywordtype">float</span> moveSpeed = 1.0f, <span class="keywordtype">float</span> rotationalSpeed = 0.25f);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_view.html#a601cebeee0a35b3897abee9732c9d7f1">View</a>(<span class="keyword">const</span> glm::vec3 &amp;startPos, <span class="keyword">const</span> glm::vec3 &amp;startViewDir, <span class="keyword">const</span> glm::vec3 &amp;up,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;         <span class="keyword">const</span> <span class="keywordtype">float</span> moveSpeed = 1.0f, <span class="keyword">const</span> <span class="keywordtype">float</span> rotationalSpeed = 0.25f);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_view.html#a6ad9d456f3ad154d4841601bf7c428a9">mouseDown</a>(<span class="keywordtype">int</span> winPosX, <span class="keywordtype">int</span> winPosY);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_view.html#ae0203fc039a93eae664712305a95c349">mouseDown</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> winPosX, <span class="keyword">const</span> <span class="keywordtype">int</span> winPosY);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_view.html#a3414bfd8483ebe536e149682a1f56924">mouseUpdate</a>(<span class="keyword">const</span> QMouseEvent *newMouseEvent);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
@@ -173,22 +172,22 @@ $(document).ready(function(){initNavTree('view_8h_source.html','');});
 <div class="ttc" id="class_view_html_a1d163527ea01d6011bca84066fd6cc58"><div class="ttname"><a href="class_view.html#a1d163527ea01d6011bca84066fd6cc58">View::strafeLeft</a></div><div class="ttdeci">void strafeLeft()</div><div class="ttdoc">Strafes the View to the left. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00048">view.cpp:48</a></div></div>
 <div class="ttc" id="class_view_html_a9868fe18eac9b42f6aec56d6b5c93556"><div class="ttname"><a href="class_view.html#a9868fe18eac9b42f6aec56d6b5c93556">View::moveDown</a></div><div class="ttdeci">void moveDown()</div><div class="ttdoc">Moves the View down. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00060">view.cpp:60</a></div></div>
 <div class="ttc" id="class_view_html_aa381e894b84527ff6f70771c37fd0ab1"><div class="ttname"><a href="class_view.html#aa381e894b84527ff6f70771c37fd0ab1">View::getViewDirection</a></div><div class="ttdeci">glm::vec3 getViewDirection() const </div><div class="ttdoc">Gets View&#39;s view direction. </div><div class="ttdef"><b>Definition:</b> <a href="view_8h_source.html#l00113">view.h:113</a></div></div>
-<div class="ttc" id="class_view_html_a92cd63ddae3ed86e03dfd4e7cb1634d0"><div class="ttname"><a href="class_view.html#a92cd63ddae3ed86e03dfd4e7cb1634d0">View::View</a></div><div class="ttdeci">View(const glm::vec3 &amp;startPos, const glm::vec3 &amp;startViewDir, const glm::vec3 &amp;up, float moveSpeed=1.0f, float rotationalSpeed=0.25f)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00008">view.cpp:8</a></div></div>
 <div class="ttc" id="class_view_html_ad99665a8d317baa531bd7bd771df2446"><div class="ttname"><a href="class_view.html#ad99665a8d317baa531bd7bd771df2446">View::strafeRight</a></div><div class="ttdeci">void strafeRight()</div><div class="ttdoc">Strafes the View to the right. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00052">view.cpp:52</a></div></div>
-<div class="ttc" id="class_view_html_a6ad9d456f3ad154d4841601bf7c428a9"><div class="ttname"><a href="class_view.html#a6ad9d456f3ad154d4841601bf7c428a9">View::mouseDown</a></div><div class="ttdeci">void mouseDown(int winPosX, int winPosY)</div><div class="ttdoc">Called when mouse button is clicked. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00018">view.cpp:18</a></div></div>
 <div class="ttc" id="class_view_html_a17982e4405bab83d4d08d2d49b078f2e"><div class="ttname"><a href="class_view.html#a17982e4405bab83d4d08d2d49b078f2e">View::setGoToPosition</a></div><div class="ttdeci">void setGoToPosition(const glm::vec3 &amp;gotoPos)</div><div class="ttdoc">Sets the GoTo position. </div><div class="ttdef"><b>Definition:</b> <a href="view_8h_source.html#l00093">view.h:93</a></div></div>
 <div class="ttc" id="class_view_html_a3c7300da9d89f48913831f7449ab3aa3"><div class="ttname"><a href="class_view.html#a3c7300da9d89f48913831f7449ab3aa3">View::moveBackward</a></div><div class="ttdeci">void moveBackward()</div><div class="ttdoc">Moves the View backwards. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00044">view.cpp:44</a></div></div>
 <div class="ttc" id="class_view_html"><div class="ttname"><a href="class_view.html">View</a></div><div class="ttdoc">Manages the position and view direction of an OpenGL window&#39;s View. </div><div class="ttdef"><b>Definition:</b> <a href="view_8h_source.html#l00019">view.h:19</a></div></div>
+<div class="ttc" id="class_view_html_a601cebeee0a35b3897abee9732c9d7f1"><div class="ttname"><a href="class_view.html#a601cebeee0a35b3897abee9732c9d7f1">View::View</a></div><div class="ttdeci">View(const glm::vec3 &amp;startPos, const glm::vec3 &amp;startViewDir, const glm::vec3 &amp;up, const float moveSpeed=1.0f, const float rotationalSpeed=0.25f)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00008">view.cpp:8</a></div></div>
 <div class="ttc" id="class_view_html_af5e907cc94a86559dba4ab692b6e48e3"><div class="ttname"><a href="class_view.html#af5e907cc94a86559dba4ab692b6e48e3">View::setView</a></div><div class="ttdeci">void setView(const glm::vec3 &amp;pos, const glm::vec3 &amp;vDir)</div><div class="ttdoc">Sets View to a new position and view direction. </div><div class="ttdef"><b>Definition:</b> <a href="view_8h_source.html#l00050">view.h:50</a></div></div>
 <div class="ttc" id="class_view_html_a64eded578243a1449405aae28139f386"><div class="ttname"><a href="class_view.html#a64eded578243a1449405aae28139f386">View::moveUp</a></div><div class="ttdeci">void moveUp()</div><div class="ttdoc">Moves the View up. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00056">view.cpp:56</a></div></div>
 <div class="ttc" id="class_view_html_a50d75b06e0062ebd49b349c72a954edc"><div class="ttname"><a href="class_view.html#a50d75b06e0062ebd49b349c72a954edc">View::moveFoward</a></div><div class="ttdeci">void moveFoward()</div><div class="ttdoc">Moves the View forwards. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00040">view.cpp:40</a></div></div>
+<div class="ttc" id="class_view_html_ae0203fc039a93eae664712305a95c349"><div class="ttname"><a href="class_view.html#ae0203fc039a93eae664712305a95c349">View::mouseDown</a></div><div class="ttdeci">void mouseDown(const int winPosX, const int winPosY)</div><div class="ttdoc">Called when mouse button is clicked. </div><div class="ttdef"><b>Definition:</b> <a href="view_8cpp_source.html#l00018">view.cpp:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>view.h</b></li>
-    <li class="footer">Generated on Sun Aug 31 2014 18:43:50 for FRTM3DProDesign by
+    <li class="footer">Generated on Fri Sep 12 2014 19:47:11 for FRTM3DProDesign by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
