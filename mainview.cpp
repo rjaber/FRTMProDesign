@@ -167,7 +167,11 @@ void MainView::resizeGL(int w, int h ) {
     mainViewWidth_ = w;
     mainViewHeight_ = h;
     glViewport(0, 0, mainViewWidth_, mainViewHeight_);
-    P_ = glm::perspective(mainViewFOV_, static_cast<float>(mainViewWidth_)/mainViewHeight_, 0.1f, 300.0f);
+    
+    static const float nearZ = 0.1f;
+    static const float farZ = 300.0f;
+    assert(mainViewHeight_ != 0);
+    P_ = glm::perspective(mainViewFOV_, static_cast<float>(mainViewWidth_)/mainViewHeight_, nearZ, farZ);
 }
 
 void MainView::mousePressEvent(QMouseEvent *event) {
