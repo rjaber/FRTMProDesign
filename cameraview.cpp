@@ -144,7 +144,7 @@ void CameraView::updatePerspectiveView() {
     clearScreenBlack();
 
     const float CAMERA_AP = cameras_->getSelectedCameraAspectRatio();
-
+    assert(CAMERA_AP != 0);
     //calculates viewport based on camera's aspect ratio and FOV.
     //dynamically adjusts the viewport based on this GLWidget's dimensions
     //to draw all what the camera captures.
