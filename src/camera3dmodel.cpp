@@ -11,7 +11,7 @@ Camera3DModel::Camera3DModel(QGLContext *context) :
        glm::scale(glm::mat4(1.0f), glm::vec3(3.0f, 3.0f, 3.0f))) {
 
     shaderProgram_.buildShaderProgram();
-    cameraModel_.buildCompleteShaderModel(":/models/SecurityCamera.obj");
+    cameraModel_.buildCompleteShaderModel(":/assets/models/SecurityCamera.obj");
     vaoCamModel_ = cameraModel_.getVAOForContext(shaderProgram_, openGLDrawingContext_);
 }
 

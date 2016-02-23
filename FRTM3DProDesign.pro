@@ -1,12 +1,4 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2014-08-18T20:36:17
-#
-#-------------------------------------------------
-
-QT       += opengl core
-
-QT       += gui
+QT       += opengl core gui
 
 TARGET = FRTM3DProDesign
 CONFIG   += console
@@ -82,8 +74,6 @@ GLEW_LIB_PATH = "$$PWD/3rdParty/glew-1.13.0/lib/Release/x64"
 INCLUDEPATH  += $$GLM_INCLUDE_PATH $$GLEW_INCLUDE_PATH
 LIBS += -L$$GLEW_LIB_PATH -lglew32
 LIBS += -lOpenGL32
-
-#TODO: ADD INSTALLS FOR dlls 
 
 RESOURCES += \
     frtm3dprodesign.qrc

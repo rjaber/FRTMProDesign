@@ -47,7 +47,7 @@ void MainWindow::onBtnCameraDragAndDropPressed() {
     QMimeData *mimeData = new QMimeData;
 
     drag->setMimeData(mimeData);
-    drag->setPixmap(QPixmap(":/images/camera.png", 0, Qt::AutoColor));
+    drag->setPixmap(QPixmap(":/assets/images/camera.png", 0, Qt::AutoColor));
 
     drag->setHotSpot(QPoint(5, 15));
     drag->exec(Qt::CopyAction);
@@ -91,7 +91,7 @@ void MainWindow::onlstWidgetCamerasDoubleClicked(const QModelIndex &index) {
 void MainWindow::createActions() {
     newObjFileAction_ = new QAction("Load OBJ Model", this);
     newObjFileAction_->setShortcut(QKeySequence::New);
-    newObjFileAction_->setIcon(QIcon(":/images/obj.png"));
+    newObjFileAction_->setIcon(QIcon(":/assets/images/obj.png"));
     newObjFileAction_->setStatusTip("Loads OBJ Model into the Main View");
     connect(newObjFileAction_, SIGNAL(triggered()), this, SLOT(openObjFile()));
 
@@ -183,21 +183,21 @@ void MainWindow::createGUIWidgets(const QString modelFilePath ) {
     //Buttons Widgets
     btnUndo_ = new QPushButton();
     btnUndo_->resize(64, 64);
-    btnUndo_->setIcon(QPixmap(":/images/undo.png", 0, Qt::AutoColor));
+    btnUndo_->setIcon(QPixmap(":/assets/images/undo.png", 0, Qt::AutoColor));
     btnUndo_->setIconSize(QSize(32, 32));
     connect(btnUndo_, SIGNAL(clicked()),
             cameras_.get(), SLOT(getMemento()));
 
     btnDeleteCamera_ = new QPushButton();
     btnDeleteCamera_->resize(64, 64);
-    btnDeleteCamera_->setIcon(QPixmap(":/images/delete.png", 0, Qt::AutoColor));
+    btnDeleteCamera_->setIcon(QPixmap(":/assets/images/delete.png", 0, Qt::AutoColor));
     btnDeleteCamera_->setIconSize(QSize(32, 32));
     connect(btnDeleteCamera_, SIGNAL(pressed()),
             cameras_.get(), SLOT(deleteSelectedCamera()));
 
     btnCameraDragAndDrop_ = new QPushButton();
     btnCameraDragAndDrop_->resize(64, 64);
-    btnCameraDragAndDrop_->setIcon(QPixmap(":/images/camera.png", 0, Qt::AutoColor));
+    btnCameraDragAndDrop_->setIcon(QPixmap(":/assets/images/camera.png", 0, Qt::AutoColor));
     btnCameraDragAndDrop_->setIconSize(QSize(32, 32));
     connect(btnCameraDragAndDrop_, SIGNAL(pressed()),
             this, SLOT(onBtnCameraDragAndDropPressed()));

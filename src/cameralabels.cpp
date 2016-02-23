@@ -27,7 +27,7 @@ void Label::mousePressEvent(QMouseEvent *event) {
 void Label::createGoToCameraAction() {
 
     goToCameraViewAction_ = new QAction("Go To Camera View", this);
-    goToCameraViewAction_->setIcon(QIcon(":/images/camera.png"));
+    goToCameraViewAction_->setIcon(QIcon(":/assets/images/camera.png"));
     connect(goToCameraViewAction_, SIGNAL(triggered()), this, SLOT(goToCameraViewActionTriggered()));
 
     this->addAction(goToCameraViewAction_);
@@ -43,7 +43,7 @@ void CameraLabels::addNewLabel(int labelID) {
     cameraLabels_[labelID]->setParent(mainViewGLWidget_);
     cameraLabels_[labelID]->resize(LABEL_DIMENSION_, LABEL_DIMENSION_);
     cameraLabels_[labelID]->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint | Qt::SplashScreen);
-    cameraLabels_[labelID]->setPixmap(QPixmap(":/images/camera_orange_background.png", 0, Qt::AutoColor));
+    cameraLabels_[labelID]->setPixmap(QPixmap(":/assets/images/camera_orange_background.png", 0, Qt::AutoColor));
     cameraLabels_[labelID]->setScaledContents(true);
     cameraLabels_[labelID]->show();
 }
