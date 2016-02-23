@@ -15,90 +15,75 @@ CONFIG   += c++11
 
 TEMPLATE = app
 
-SOURCES += main.cpp \
-    mainview.cpp \
-    view.cpp \
-    model.cpp \
-    cameraviewfrustum.cpp \
-    cameras.cpp \
-    cameraview.cpp \
-    glslprogram.cpp \
-    glslmainviewprogram.cpp \
-    glslfrustumprogram.cpp \
-    glslzbufferprogram.cpp \
-    objloader.cpp \
-    cameraszbuffer.cpp \
-    camera3dmodel.cpp \
-    cameralabels.cpp \
-    camerasmemento.cpp \
-    mainwindow.cpp \
-    glsl3dcameraprogram.cpp \
-    glslcameraviewprogram.cpp \
-    camera3dmodel.cpp \
-    cameralabels.cpp \
-    cameras.cpp \
-    camerasmemento.cpp \
-    cameraszbuffer.cpp \
-    cameraview.cpp \
-    cameraviewfrustum.cpp \
-    glsl3dcameraprogram.cpp \
-    glslcameraviewprogram.cpp \
-    glslfrustumprogram.cpp \
-    glslmainviewprogram.cpp \
-    glslprogram.cpp \
-    glslzbufferprogram.cpp \
-    mainview.cpp \
-    mainwindow.cpp \
-    model.cpp \
-    objloader.cpp \
-    view.cpp \
-    frtmutils.cpp
+SOURCES += src/main.cpp \
+    src/mainview.cpp \
+    src/view.cpp \
+    src/model.cpp \
+    src/cameraviewfrustum.cpp \
+    src/cameras.cpp \
+    src/cameraview.cpp \
+    src/glslprogram.cpp \
+    src/glslmainviewprogram.cpp \
+    src/glslfrustumprogram.cpp \
+    src/glslzbufferprogram.cpp \
+    src/objloader.cpp \
+    src/cameraszbuffer.cpp \
+    src/camera3dmodel.cpp \
+    src/cameralabels.cpp \
+    src/camerasmemento.cpp \
+    src/mainwindow.cpp \
+    src/glsl3dcameraprogram.cpp \
+    src/glslcameraviewprogram.cpp \
+    src/camera3dmodel.cpp \
+    src/cameralabels.cpp \
+    src/cameras.cpp \
+    src/camerasmemento.cpp \
+    src/cameraszbuffer.cpp \
+    src/cameraview.cpp \
+    src/cameraviewfrustum.cpp \
+    src/glsl3dcameraprogram.cpp \
+    src/glslcameraviewprogram.cpp \
+    src/glslfrustumprogram.cpp \
+    src/glslmainviewprogram.cpp \
+    src/glslprogram.cpp \
+    src/glslzbufferprogram.cpp \
+    src/mainview.cpp \
+    src/mainwindow.cpp \
+    src/model.cpp \
+    src/objloader.cpp \
+    src/view.cpp \
+    src/frtmutils.cpp
 
-GLM_INCLUDE_PATH = "C:/OpenGL/include"
-GLEW_INCLUDE_PATH = "C:/OpenGL/include"
-GLEW_LIB_PATH = "C:/OpenGL/lib"
+HEADERS += \
+    src/view.h \
+    src/model.h \
+    src/mainview.h \
+    src/cameraviewfrustum.h \
+    src/cameras.h \
+    src/cameraview.h \
+    src/camerasmemento.h \
+    src/glslprogram.h \
+    src/glslmainviewprogram.h \
+    src/glslfrustumprogram.h \
+    src/glslzbufferprogram.h \
+    src/objloader.h \
+    src/cameraszbuffer.h \
+    src/camera3dmodel.h \
+    src/cameralabels.h \
+    src/mainwindow.h \
+    src/glsl3dcameraprogram.h \
+    src/glslcameraviewprogram.h \
+    src/frtmutils.h
+
+GLM_INCLUDE_PATH = "$$PWD/3rdParty/glm"
+GLEW_INCLUDE_PATH = "$$PWD/3rdParty/glew-1.13.0/include"
+GLEW_LIB_PATH = "$$PWD/3rdParty/glew-1.13.0/lib/Release/x64"
 
 INCLUDEPATH  += $$GLM_INCLUDE_PATH $$GLEW_INCLUDE_PATH
 LIBS += -L$$GLEW_LIB_PATH -lglew32
+LIBS += -lOpenGL32
 
-INCLUDEPATH += C:\\OpenCV-2.4.8\\opencv\\build\\include
-LIBS += -LC:\\OpenCV-2.4.8\\opencv\\build\\x64\\vc11\\lib \
-    -lopencv_calib3d248d \
-    -lopencv_contrib248d \
-    -lopencv_core248d \
-    -lopencv_features2d248d \
-    -lopencv_flann248d \
-    -lopencv_gpu248d \
-    -lopencv_highgui248d \
-    -lopencv_imgproc248d \
-    -lopencv_legacy248d \
-    -lopencv_ml248d \
-    -lopencv_objdetect248d \
-    -lopencv_ts248d \
-    -lopencv_video248d \
-
-HEADERS += \
-    view.h \
-    model.h \
-    mainview.h \
-    cameraviewfrustum.h \
-    cameras.h \
-    cameraview.h \
-    camerasmemento.h \
-    glslprogram.h \
-    glslmainviewprogram.h \
-    glslfrustumprogram.h \
-    glslzbufferprogram.h \
-    objloader.h \
-    cameraszbuffer.h \
-    camera3dmodel.h \
-    cameralabels.h \
-    mainwindow.h \
-    glsl3dcameraprogram.h \
-    glslcameraviewprogram.h \
-    frtmutils.h
-
-FORMS +=
+#TODO: ADD INSTALLS FOR dlls 
 
 RESOURCES += \
     frtm3dprodesign.qrc
