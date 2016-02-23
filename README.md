@@ -17,6 +17,7 @@ OS
 Dependencies
 ============
 - Requires Qt5 (Open Source and freely available http://www.qt.io/)
+- nmake or jom for compiling
 
 Building Instructions
 =====================
