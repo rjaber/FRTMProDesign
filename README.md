@@ -20,10 +20,14 @@ Dependencies
 
 Building Instructions
 =====================
+```bash
 git clone https://github.com/jaybird19/FRTMProDesign.git
 cd FRTMProDesign.git
 qmake -r
 nmake
+```
 
 - To generate a Visual Studio Solution:
+```bash
 qmake -r -tp vc
+```
