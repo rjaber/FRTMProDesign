@@ -17,13 +17,18 @@ OS
 Dependencies
 ============
 - Requires Qt5 (Open Source and freely available http://www.qt.io/)
+- nmake or jom for compiling
 
 Building Instructions
 =====================
+```bash
 git clone https://github.com/jaybird19/FRTMProDesign.git
-cd FRTMProDesign.git
+cd FRTMProDesign
 qmake -r
 nmake
+```
 
 - To generate a Visual Studio Solution:
+```bash
 qmake -r -tp vc
+```
