@@ -22,7 +22,7 @@ Building Instructions
 =====================
 ```bash
 git clone https://github.com/jaybird19/FRTMProDesign.git
-cd FRTMProDesign.git
+cd FRTMProDesign
 qmake -r
 nmake
 ```
