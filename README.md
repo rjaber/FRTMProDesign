@@ -20,7 +20,10 @@ Usage
 
 ScreenShots
 ===========
+Main Window (Drag and Drop Cameras)
 ![Alt text](./misc/screenshots/main_window.jpg?raw=true "Main Window")
+
+Enhanced Camera View
 ![Alt text](./misc/screenshots/room_corner.jpg?raw=true "Enahnced Camera View")
 
 3D Surveillance Designer
