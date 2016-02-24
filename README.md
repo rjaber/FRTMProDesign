@@ -1,5 +1,16 @@
 FRTMProDesigner
 ===============
+
+3D Surveillance Designer
+========================
+
+- 3D rendering developed with modern OpenGL including vertex & fragment shaders
+- Makes use of projective texture mapping
+- Developed software using OOP principles and design patterns
+- Doxygen documentation: http://jaybird19.github.io/FRTMProDesign/
+- Demo video: https://www.youtube.com/watch?v=G1GyezFv3XE
+- Technologies: Qt, C++11, STL, OpenGL, GLSL, GLM
+- 
 Usage
 =====
 - Run FRTM3DProDesign
@@ -25,16 +36,6 @@ Main Window (Drag and Drop Cameras)
 
 Enhanced Camera View
 ![Alt text](./misc/screenshots/room_corner.jpg?raw=true "Enahnced Camera View")
-
-3D Surveillance Designer
-========================
-
-- 3D rendering developed with modern OpenGL including vertex & fragment shaders
-- Makes use of projective texture mapping
-- Developed software using OOP principles and design patterns
-- Doxygen documentation: http://jaybird19.github.io/FRTMProDesign/
-- Demo video: https://www.youtube.com/watch?v=G1GyezFv3XE
-- Technologies: Qt, C++11, STL, OpenGL, GLSL, GLM
 
 Platform
 ========
