@@ -19,7 +19,7 @@ Usage
 - Open the sample model found in ./assets/models/OfficeModel.obj
 - Move around the 3D model using your mouse and WASD keys
 - Drag and Drop the Camera logo into desired location in the 3D world
-- The green frustom represents the camera's field of coverage
+- The green frustum represents the camera's field of coverage
 - Provide a more relevant name for the Camera on the left pane
 - On the left pane you can modify the Camera's FOVx (default 60) and Aspect Ratio (default 1.33)
 - Toggle the Show Full Coverage on the left pane to see the full view of a PTZ camera
@@ -44,7 +44,7 @@ Platform
 
 Dependencies
 ============
-- Requires Qt5 (Open Source and freely available http://www.qt.io/)
+- Qt5 (Open Source and freely available http://www.qt.io/)
 - nmake or jom for compiling
 
 Building Instructions
