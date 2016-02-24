@@ -1,7 +1,16 @@
 FRTMProDesigner
 ===============
+Usage
+=====
+
+ScreenShots
+===========
+![Alt text](./misc/screenshots/main_window.jpg?raw=true "Main Window")
+![Alt text](./misc/screenshots/room_corner.jpg?raw=true "Enahnced Camera View")
+
 
 3D Surveillance Designer
+========================
 
 - 3D rendering developed with modern OpenGL including vertex & fragment shaders
 - Makes use of projective texture mapping
@@ -11,7 +20,7 @@ FRTMProDesigner
 - Technologies: Qt, C++11, STL, OpenGL, GLSL, GLM
 
 Platform
-==
+========
 - Developed on/for Windows 7 (x86-64) & Windows 10 (x86-64)
 
 Dependencies
