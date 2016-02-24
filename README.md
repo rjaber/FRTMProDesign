@@ -30,7 +30,7 @@ Usage
 - Undo button is provided to undo any changes made to the state of the world
 - Use the Delete button to delete the selected camera from the world
 
-ScreenShots
+Screenshots
 ===========
 Main Window (Drag and Drop Cameras)
 ![Alt text](./misc/screenshots/main_window.jpg?raw=true "Main Window")
