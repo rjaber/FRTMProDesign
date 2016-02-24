@@ -75,10 +75,11 @@ INCLUDEPATH  += $$GLM_INCLUDE_PATH $$GLEW_INCLUDE_PATH
 LIBS += -L$$GLEW_LIB_PATH -lglew32
 LIBS += -lOpenGL32
 
-GLEW_DLL.files = "$$PWD/3rdParty/glew-1.13.0/bin/Release/x64/glew32.dll"
-GLEW_DLL.path= "$$PWD"
+GLEW_DLL_DEBUG.files = "$$PWD/3rdParty/glew-1.13.0/bin/Release/x64/glew32.dll"
+GLEW_DLL_DEBUG.path= "$$PWD/debug"
+GLEW_DLL_RELEASE.files = "$$PWD/3rdParty/glew-1.13.0/bin/Release/x64/glew32.dll"
+GLEW_DLL_RELEASE.path= "$$PWD/release"
 
-INSTALLS += GLEW_DLL
-
+INSTALLS += GLEW_DLL_DEBUG GLEW_DLL_RELEASE
 RESOURCES += \
     frtm3dprodesign.qrc
