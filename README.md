@@ -8,9 +8,10 @@ FRTMProDesigner
 - Makes use of projective texture mapping
 - Developed software using OOP principles and design patterns
 - Doxygen documentation: http://jaybird19.github.io/FRTMProDesign/
-- Demo video: https://www.youtube.com/watch?v=G1GyezFv3XE
 - Technologies: Qt, C++11, STL, OpenGL, GLSL, GLM
-- 
+- Demo video: https://www.youtube.com/watch?v=G1GyezFv3XE
+-
+
 Usage
 =====
 - Run FRTM3DProDesign
