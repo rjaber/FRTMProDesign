@@ -10,9 +10,9 @@ FRTMProDesigner
 - Demo video: https://www.youtube.com/watch?v=G1GyezFv3XE
 - Technologies: Qt, C++11, STL, OpenGL, GLSL, GLM
 
-OS
+Platform
 ==
-- Developed on/for Windows 7 & Windows 10
+- Developed on/for Windows 7 (x86-64) & Windows 10 (x86-64)
 
 Dependencies
 ============
@@ -25,7 +25,9 @@ Building Instructions
 git clone https://github.com/jaybird19/FRTMProDesign.git
 cd FRTMProDesign
 qmake -r
-nmake
+nmake release
+nmake debug
+nmake install
 ```
 
 - To generate a Visual Studio Solution:
