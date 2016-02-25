@@ -7,6 +7,7 @@ FRTMProDesigner
 - 3D rendering developed with modern OpenGL including vertex & fragment shaders
 - Makes use of projective texture mapping
 - Developed software using OOP principles and design patterns
+- Multiplatform: Runs on both Windows and Linux
 - Doxygen documentation: http://jaybird19.github.io/FRTMProDesign/
 - Technologies: Qt, C++11, STL, OpenGL, GLSL, GLM
 - Demo video: https://www.youtube.com/watch?v=G1GyezFv3XE
@@ -38,14 +39,19 @@ Main Window (Drag and Drop Cameras)
 Enhanced Camera View
 ![Alt text](./misc/screenshots/room_corner.jpg?raw=true "Enahnced Camera View")
 
-Platform
-========
-- Developed on/for Windows 7 (x86-64) & Windows 10 (x86-64)
+Tested Platforms
+================
+- Windows 7 (x86-64)
+- Windows 10 (x86-64)
+- Ubuntu 15.10 (x86-64)
 
 Dependencies
 ============
+- Minimum supported OpenGL version 3.3
 - Qt5 (Open Source and freely available http://www.qt.io/)
-- nmake or jom for compiling
+- MSVC/nmake for Windows
+- make/gcc for Linux
+- libglew for Linux (sudo apt-get install libglew-dev)
 
 Building Instructions
 =====================
