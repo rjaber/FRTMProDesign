@@ -4,7 +4,6 @@
 
 #include <glm/gtx/transform.hpp>
 
-
 View::View(const glm::vec3 &startPos, const glm::vec3 &startViewDir, const glm::vec3 &up,
                     float moveSpeed, float rotationalSpeed) :
                     position_(startPos),

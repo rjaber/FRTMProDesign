@@ -1,8 +1,8 @@
 #ifndef MODEL_H
 #define MODEL_H
 #include <GL/glew.h>
-#include <GL/GL.h>
-#include <GL/GLU.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
 
 #include <QVector>
 #include <QString>

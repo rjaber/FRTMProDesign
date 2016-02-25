@@ -4,24 +4,27 @@ TARGET = FRTM3DProDesign
 CONFIG   += console
 CONFIG   -= app_bundle
 CONFIG   += c++11
+CONFIG	 += debug_and_release
+
+CONFIG(debug, debug|release) {
+    DESTDIR = debug 
+}
+
+CONFIG(release, debug|release) {
+    DESTDIR = release 
+}
 
 TEMPLATE = app
 
-SOURCES += src/main.cpp \
+SOURCES = src/main.cpp \
     src/mainview.cpp \
     src/view.cpp \
-    src/model.cpp \
     src/cameraviewfrustum.cpp \
-    src/cameras.cpp \
-    src/cameraview.cpp \
     src/glslprogram.cpp \
     src/glslmainviewprogram.cpp \
     src/glslfrustumprogram.cpp \
     src/glslzbufferprogram.cpp \
-    src/objloader.cpp \
     src/cameraszbuffer.cpp \
-    src/camera3dmodel.cpp \
-    src/cameralabels.cpp \
     src/camerasmemento.cpp \
     src/mainwindow.cpp \
     src/glsl3dcameraprogram.cpp \
@@ -29,24 +32,12 @@ SOURCES += src/main.cpp \
     src/camera3dmodel.cpp \
     src/cameralabels.cpp \
     src/cameras.cpp \
-    src/camerasmemento.cpp \
-    src/cameraszbuffer.cpp \
     src/cameraview.cpp \
-    src/cameraviewfrustum.cpp \
-    src/glsl3dcameraprogram.cpp \
-    src/glslcameraviewprogram.cpp \
-    src/glslfrustumprogram.cpp \
-    src/glslmainviewprogram.cpp \
-    src/glslprogram.cpp \
-    src/glslzbufferprogram.cpp \
-    src/mainview.cpp \
-    src/mainwindow.cpp \
     src/model.cpp \
     src/objloader.cpp \
-    src/view.cpp \
     src/frtmutils.cpp
 
-HEADERS += \
+HEADERS = \
     src/view.h \
     src/model.h \
     src/mainview.h \
@@ -68,20 +59,27 @@ HEADERS += \
     src/frtmutils.h
 
 GLM_INCLUDE_PATH = "$$PWD/3rdParty/glm"
-GLEW_INCLUDE_PATH = "$$PWD/3rdParty/glew-1.13.0/include"
-GLEW_LIB_PATH = "$$PWD/3rdParty/glew-1.13.0/lib/Release/x64"
+INCLUDEPATH += $$GLM_INCLUDE_PATH 
 
-INCLUDEPATH  += $$GLM_INCLUDE_PATH $$GLEW_INCLUDE_PATH
-LIBS += -L$$GLEW_LIB_PATH -lglew32
-LIBS += -lOpenGL32
+win32 {
+	INCLUDEPATH += $$GLEW_INCLUDE_PATH
+	GLEW_INCLUDE_PATH = "$$PWD/3rdParty/win32/glew-1.13.0/include"
+	GLEW_LIB_PATH = "$$PWD/3rdParty/win32/glew-1.13.0/lib/Release/x64"
+	LIBS += -L$$GLEW_LIB_PATH -lglew32
+	LIBS += -lOpenGL32
 
-GLEW_DLL_DEBUG.files = "$$PWD/3rdParty/glew-1.13.0/bin/Release/x64/glew32.dll"
-GLEW_DLL_DEBUG.path= "$$PWD/debug"
+	GLEW_DLL_DEBUG.files = "$$PWD/3rdParty/win32/glew-1.13.0/bin/Release/x64/glew32.dll"
+	GLEW_DLL_DEBUG.path= "$$PWD/debug"
 
-GLEW_DLL_RELEASE.files = "$$PWD/3rdParty/glew-1.13.0/bin/Release/x64/glew32.dll"
-GLEW_DLL_RELEASE.path= "$$PWD/release"
+	GLEW_DLL_RELEASE.files = "$$PWD/3rdParty/win32/glew-1.13.0/bin/Release/x64/glew32.dll"
+	GLEW_DLL_RELEASE.path= "$$PWD/release"
 
-INSTALLS += GLEW_DLL_DEBUG GLEW_DLL_RELEASE
+	INSTALLS += GLEW_DLL_DEBUG GLEW_DLL_RELEASE
+}
+
+unix {
+	LIBS += -lGLEW -lGL
+}
 
 RESOURCES += \
     frtm3dprodesign.qrc
