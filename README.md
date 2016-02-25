@@ -7,7 +7,6 @@ FRTMProDesigner
 - 3D rendering developed with modern OpenGL including vertex & fragment shaders
 - Makes use of projective texture mapping
 - Developed software using OOP principles and design patterns
-- Multiplatform: Runs on both Windows and Linux
 - Doxygen documentation: http://jaybird19.github.io/FRTMProDesign/
 - Technologies: Qt, C++11, STL, OpenGL, GLSL, GLM
 - Demo video: https://www.youtube.com/watch?v=G1GyezFv3XE
@@ -43,7 +42,7 @@ Tested Platforms
 ================
 - Windows 7 (x86-64)
 - Windows 10 (x86-64)
-- Ubuntu 15.10 (x86-64)
+- Ubuntu 15.10 (x86-64) (TODO: Not complete yet)
 
 Dependencies
 ============
@@ -70,7 +69,7 @@ nmake install
 qmake -r -tp vc
 ```
 
-- Linux
+- Linux (Port to Linux is still not complete)
 ```bash
 git clone https://github.com/jaybird19/FRTMProDesign.git
 cd FRTMProDesign
