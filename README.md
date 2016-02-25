@@ -55,10 +55,11 @@ Dependencies
 
 Building Instructions
 =====================
+- Windows
 ```bash
 git clone https://github.com/jaybird19/FRTMProDesign.git
 cd FRTMProDesign
-qmake -r
+qmake
 nmake release
 nmake debug
 nmake install
@@ -67,4 +68,13 @@ nmake install
 - To generate a Visual Studio Solution:
 ```bash
 qmake -r -tp vc
+```
+
+- Linux
+```bash
+git clone https://github.com/jaybird19/FRTMProDesign.git
+cd FRTMProDesign
+qmake
+make release
+make debug
 ```
