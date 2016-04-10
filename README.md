@@ -24,7 +24,7 @@ Usage
 - On the left pane you can modify the Camera's FOVx (default 60) and Aspect Ratio (default 1.33)
 - Toggle the Show Full Coverage on the left pane to see the full view of a PTZ camera
 - The bottom left window displays the Camera's view, use the mouse to adjust the selected camera's angle
-- The Camera View Window can be popped by double-clisking its top bar
+- The Camera View Window can be popped by double-clicking its top bar
 - Right click and use the mouse to move the slected camera around the 3D model
 - Double-click the camera's name or click the camera's logo in the 3D world to select a camera and display it's view in the Camera View Window
 - Undo button is provided to undo any changes made to the state of the world
