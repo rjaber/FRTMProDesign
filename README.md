@@ -18,7 +18,7 @@ Usage
 - Load the .obj file: File --> Load OBJ Model or Ctrl+N
 - Open the sample model found in ./assets/models/OfficeModel.obj
 - Move around the 3D model using your mouse and WASD keys
-- Drag and Drop the Camera logo into desired location in the 3D world
+- Drag and Drop the Camera logo into the desired location in the 3D world
 - The green frustum represents the camera's field of coverage
 - Provide a more relevant name for the Camera on the left pane
 - On the left pane you can modify the Camera's FOVx (default 60) and Aspect Ratio (default 1.33)
