@@ -15,7 +15,7 @@ FRTMProDesigner
 Usage
 =====
 - Run FRTM3DProDesign
-- Load .obj file: File --> Load OBJ Model or Ctrl+N
+- Load the .obj file: File --> Load OBJ Model or Ctrl+N
 - Open the sample model found in ./assets/models/OfficeModel.obj
 - Move around the 3D model using your mouse and WASD keys
 - Drag and Drop the Camera logo into desired location in the 3D world
